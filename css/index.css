@@ -43,7 +43,7 @@ body {
 .slide-1 {
   width: 100%;
   height: auto;
-  background: url("/img/introduction/start1.jpg") no-repeat;
+  background: url("../img/introduction/start1.jpg") no-repeat;
   padding-top: 178%;
   background-size: cover;
   background-position: center;
@@ -51,7 +51,7 @@ body {
 .slide-2 {
   width: 100%;
   height: auto;
-  background: url("/img/introduction/start2.jpg") no-repeat;
+  background: url("../img/introduction/start2.jpg") no-repeat;
   padding-top: 178%;
   background-size: cover;
   background-position: center;
@@ -59,8 +59,18 @@ body {
 .slide-3 {
   width: 100%;
   height: auto;
-  background: url("/img/introduction/start3.jpg") no-repeat;
+  background: url("../img/introduction/start3.jpg") no-repeat;
   padding-top: 178%;
   background-size: cover;
   background-position: center;
+}
+a.openApp {
+  width: 2rem;
+  height: 0.5rem;
+  border: 0.03rem solid #bea474;
+  position: absolute;
+  bottom: 1.5rem;
+  font-size: 0.3rem;
+  color: #bea474 !important;
+  cursor: pointer;
 }
