@@ -119,17 +119,127 @@
                     <div class="swiper-slide">
                         <div class="content-slide">
                             <!-- 服饰鞋包 -->
-                            sdfdhdfh
+                            <div class="clothes">
+                                <div class="banner_clothes">
+                                    <ul>
+                                        <li><img src="img/home/clothes/banner1.png" alt=""></li>
+                                        <li><img src="img/home/clothes/banner2.png" alt=""></li>
+                                        <li><img src="img/home/clothes/banner3.png" alt=""></li>
+                                        <li class="clothes_active"><img src="img/home/clothes/banner4.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="category">
+                                    <a href="#">
+                                        <img src="img/home/clothes/women.png" alt="">
+                                        <p>女装</p>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/home/clothes/bag.png" alt="">
+                                        <p>包包</p>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/home/clothes/shose.png" alt="">
+                                        <p>热鞋</p>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/home/clothes/clothes.png" alt="">
+                                        <p>内衣</p>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/home/clothes/watch.png" alt="">
+                                        <p>配饰</p>
+                                    </a>
+                                </div>
+                                <div class="new">
+                                    <img src="img/home/clothes/hot.png" alt="">
+                                </div>
+                                <div class="hot_goods-1 clearfix">
+                                    <div class="left">
+                                        <img src="img/home/clothes/left.png" alt="">
+                                        <p>
+                                            圆领休闲半袖T恤<br>
+                                            ￥368
+                                        </p>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/home/clothes/right.png" alt="">
+                                        <p>
+                                            魅惑玫瑰香水<br>
+                                            ￥458
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="content-slide">
-qq
+                            <!-- 婚纱 -->
+                            <div class="wedding">
+                                <div id="weddingBanner" class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="title">
+                                    <img src="img/home/wedding/title.png" alt="">
+                                </div>
+                                <div class="accessory">
+                                    <!-- <div class="parter">
+                                        <img src="img/home/wedding/bag.png" alt="">
+                                        <p>手包</p>
+                                    </div> -->
+                                </div>
+                                <div class="title">
+                                    <img src="img/home/wedding/dress.png" alt="">
+                                </div>
+                                <div class="wedding_dress clearfix">
+                                    <!-- <div class="dress">
+                                        <img src="img/home/wedding/1.png" alt="">
+                                    </div> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="content-slide">
-ww
+                            <!-- 二手奢侈品 -->
+                            <div class="secondHand">
+                                <div id="secondHandBanner" class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="menu">
+                                    <a href="#">
+                                        <img src="img/home/secondHand/new.png" alt="">
+                                        <p>最新上架</p>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/home/secondHand/sale.png" alt="">
+                                        <p>限时促销</p>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/home/secondHand/gift.png" alt="">
+                                        <p>挑好礼</p>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/home/secondHand/category.png" alt="">
+                                        <p>奢品分类</p>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <img src="img/home/secondHand/title.png" alt="">
+                                </div>
+                                <div class="goods">
+                                    <div id="goods" class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,9 +263,14 @@ ww
         </div>
     </div>
 </body>
+
+
+
+
 <script src="js/jquery-2.1.0.js"></script>
 <script>
     // $(function(){
+    //hot
     //轮播图
     var banner = ["img/home/banner1.png", "img/home/banner2.png", "img/home/banner3.png"];
     banner.forEach(function (val) {
@@ -196,16 +311,145 @@ ww
         $(".hot").append($part);
     })
     // })
+
+    //clothes
+    $(function () {
+        $("div.banner_clothes li").on("touchstart", function () {
+            $(this).addClass("clothes_active").siblings().removeClass("clothes_active")
+        })
+    })
+
+    //wedding
+    //轮播图
+    var weddingBanner = ["img//home/wedding/banner1.png", "img//home/wedding/banner2.png",
+        "img//home/wedding/banner3.png"
+    ];
+    weddingBanner.forEach(function (val) {
+        var $slide1 = $("<div class='swiper-slide'></div>");
+        var $img1 = $("<img src=''/>");
+        $img1.attr("src", val);
+        $slide1.append($img1);
+        $("#weddingBanner .swiper-wrapper").append($slide1);
+    })
+    //配饰
+    var accessory = [{
+            "img": "img/home/wedding/bag.png",
+            "name": "手包"
+        },
+        {
+            "img": "img/home/wedding/accessory.png",
+            "name": "配饰"
+        },
+        {
+            "img": "img/home/wedding/shoes.png",
+            "name": "婚鞋"
+        },
+        {
+            "img": "img/home/wedding/veil.png",
+            "name": "头纱"
+        }
+    ];
+    accessory.forEach(function (val, index, arr) {
+        var $parter = $("<div class='parter'></div>");
+        var $img = $("<img/>");
+        var $name = $("<p></p>");
+        $img.attr("src", val["img"]);
+        $name.text(val["name"]);
+        $parter.append($img, $name);
+        $(".accessory").append($parter);
+    })
+    //婚纱
+    var dress = ["img/home/wedding/1.png", "img/home/wedding/2.png", "img/home/wedding/3.png", "img/home/wedding/4.png",
+        "img/home/wedding/5.png", "img/home/wedding/6.png"
+    ];
+    dress.forEach(function (val, index, arr) {
+        var $dress = $("<div class='dress'></div>");
+        var $img = $("<img/>");
+        $img.attr("src", val);
+        $dress.append($img);
+        $(".wedding_dress").append($dress)
+    })
+    //二手奢侈品
+    var secondHandBanner = ["img/home/secondHand/banner1.png", "img/home/secondHand/banner2.png"];
+    secondHandBanner.forEach(function (val, index, arr) {
+        var $slide = $("<div class='swiper-slide'></div>");
+        var $img = $("<img src=''/>");
+        $img.attr("src", val);
+        $slide.append($img);
+        $("#secondHandBanner .swiper-wrapper").append($slide);
+    })
+
+    var goods = [
+        {
+            "img":"img/home/secondHand/chanel1.png",
+            "name":"CHANEL/香奈儿"
+        },
+        {
+            "img":"img/home/secondHand/gucci.png",
+            "name":"GUCCI/古驰"
+        },
+        {
+            "img":"img/home/secondHand/chanel2.png",
+            "name":"CHANEL/香奈儿"
+        },
+        {
+            "img":"img/home/secondHand/chanel1.png",
+            "name":"CHANEL/香奈儿"
+        },
+        {
+            "img":"img/home/secondHand/gucci.png",
+            "name":"GUCCI/古驰"
+        },
+        {
+            "img":"img/home/secondHand/chanel2.png",
+            "name":"CHANEL/香奈儿"
+        }
+    ];
+    goods.forEach(function(val,index,arr){
+        var $slide = $("<div class='swiper-slide'></div>");
+        var $div = $("<div class='goods_content'></div>")
+        var $img = $("<img src=''/>");
+        var $name = $("<p></p>");
+        $img.attr("src", val["img"]);
+        $name.text(val["name"]);
+        $div.append($img, $name);
+        $slide.append($div);
+        $("#goods .swiper-wrapper").append($slide);
+    })
 </script>
+
+
+
 <script src="js/swiper.min.js"></script>
 <script>
-    var swiper = new Swiper('#hotBanner', {
+    var hotSwiper = new Swiper('#hotBanner', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         autoplay: 3000,
         loop: true,
         autoplayDisableOnInteraction: false
     });
+    var weddingSwiper = new Swiper('#weddingBanner', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        loop: true,
+        autoplayDisableOnInteraction: false
+    });
+    var secondHandSwiper = new Swiper('#secondHandBanner', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        loop: true,
+        autoplayDisableOnInteraction: false
+    });
+    var goods = new Swiper('#goods', {
+        autoplayDisableOnInteraction: false,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true
+    });
+    
     var tabsSwiper = new Swiper('#tabs-container', {
         speed: 500,
         onSlideChangeStart: function (swiper) {
@@ -220,6 +464,9 @@ ww
         tabsSwiper.slideTo($(this).parent("li").index())
     })
 </script>
+
+
+
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 
 </html>

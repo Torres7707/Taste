@@ -73,4 +73,6 @@ a.openApp {
   font-size: 0.3rem;
   color: #bea474 !important;
   cursor: pointer;
+  text-align: center;
+  line-height: 0.5rem;
 }

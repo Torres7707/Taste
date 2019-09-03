@@ -65,6 +65,7 @@
 
             ::-webkit-input-placeholder {
                 font-size: 0.22rem;
+                text-align: center;
             }
         }
 
@@ -196,6 +197,337 @@
                 }
             }
         }
+
+        .clothes {
+            width: 6.9rem;
+            margin: 0 auto;
+
+            .banner_clothes {
+                width: 6.9rem;
+
+                ul {
+                    width: 100%;
+                    height: 3rem;
+                    overflow: hidden;
+                    box-shadow: 0rem 0.12rem 0.24rem -0.12rem #cccccc;
+
+                    li {
+                        width: 1rem;
+                        height: 3rem;
+                        float: left;
+                        overflow: hidden;
+
+                        transition: width .3s;
+
+                        img {
+                            height: 3rem;
+                            transform: translateX(-0.7rem);
+                        }
+                    }
+
+                    li.clothes_active {
+                        width: 3.9rem;
+                    }
+                }
+            }
+
+            .category {
+                text-align: center;
+                margin-top: 0.15rem;
+
+                a {
+                    display: inline-block;
+                    margin: 0 0.25rem;
+
+                    img {
+                        width: 0.76rem;
+                        height: 0.65rem;
+                    }
+
+                    p {
+                        font-size: 0.24rem;
+                        color: #151515;
+                    }
+                }
+            }
+
+            .new {
+                width: 100%;
+                height: 1rem;
+                text-align: center;
+                line-height: 1rem;
+
+                img {
+                    width: 2.89rem;
+                    height: 0.43rem;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+            }
+
+            .hot_goods-1 {
+                width: 100%;
+                height: 4.4rem;
+
+                .left {
+                    width: 4.25rem;
+                    height: 4.4rem;
+                    float: left;
+                    background-color: #ffffff;
+                    box-shadow: 0rem 0.12rem 0.24rem -0.12rem #cccccc;
+
+                    img {
+                        width: 100%;
+                        height: 3.25rem;
+                    }
+
+                    p {
+                        font-size: 0.24rem;
+                        color: #151515;
+                        margin: 0.35rem 0 0 0.3rem;
+                    }
+                }
+
+                .right {
+                    width: 2.35rem;
+                    height: 4.4rem;
+                    float: left;
+                    margin-left: 0.3rem;
+                    background-color: #ffffff;
+                    box-shadow: 0.12rem 0.12rem 0.24rem -0.12rem #cccccc;
+
+                    img {
+                        width: 100%;
+                        height: 3.25rem;
+                    }
+
+                    p {
+                        font-size: 0.24rem;
+                        color: #151515;
+                        margin: 0.35rem 0 0 0.3rem;
+                    }
+                }
+            }
+        }
+
+        .wedding {
+            width: 6.9rem;
+            margin: 0 auto;
+
+            .swiper-container {
+                width: 100%;
+                box-shadow: 0rem 0.12rem 0.24rem -0.12rem #cccccc;
+
+                .swiper-slide {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 18px;
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .swiper-pagination-bullet {
+                    width: 0.5rem;
+                    height: 0.05rem;
+                    border-radius: 0;
+                }
+            }
+
+            .title {
+                width: 100%;
+                text-align: center;
+                margin-top: 0.2rem;
+
+                img {
+                    height: 0.45rem;
+                }
+            }
+
+            .accessory {
+                width: 100%;
+                height: 1.78rem;
+                margin-top: 0.2rem;
+
+                .parter {
+                    width: 1.575rem;
+                    height: 1.78rem;
+                    float: left;
+                    margin-left: 0.2rem;
+                    box-shadow: 0rem 0.12rem 0.24rem -0.12rem #cccccc;
+
+                    img {
+                        width: 1.575rem;
+                        height: 1.3rem;
+                    }
+
+                    p {
+                        font-size: 0.26rem;
+                        color: #bea474;
+                        text-align: center;
+                        line-height: 0.48rem;
+                    }
+                }
+
+                .parter:nth-child(1) {
+                    margin-left: 0;
+                }
+            }
+
+            .wedding_dress {
+                width: 100%;
+
+                .dress {
+                    width: 2.19rem;
+                    height: 2.84rem;
+                    float: left;
+                    margin: 0.2rem 0 0 0.11rem;
+
+                    img {
+                        width: 2.19rem;
+                        height: 2.84rem;
+                    }
+                }
+
+                .dress:nth-child(3n+1) {
+                    margin: 0.2rem 0 0 0;
+                }
+            }
+        }
+
+        .secondHand {
+            .swiper-container {
+                width: 100%;
+
+                .swiper-slide {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 18px;
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .swiper-pagination-bullet {
+                    width: 0.5rem;
+                    height: 0.05rem;
+                    border-radius: 0;
+                }
+            }
+
+            .menu {
+                width: 100%;
+                font-size: 0;
+                margin-top: 0.4rem;
+
+                a {
+                    display: inline-block;
+                    width: 25%;
+                    text-align: center;
+
+                    img {
+                        width: 0.6rem;
+                    }
+
+                    p {
+                        font-size: 0.22rem;
+                        color: #2d2d2d;
+                        margin-top: 0.1rem;
+                    }
+                }
+            }
+
+            .title {
+                width: 100%;
+                text-align: center;
+                margin-top: 0.4rem;
+
+                img {
+                    height: 0.47rem;
+                }
+            }
+
+            .goods {
+                margin-top: 0.4rem;
+
+                .swiper-container {
+                    width: 6.9rem;
+                    margin: 0 auto;
+                    overflow: hidden;
+
+                    .swiper-slide {
+                        width: 2.4rem;
+                        height: 3.3rem;
+                        text-align: center;
+                        font-size: 18px;
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+
+                        .goods_content {
+                            width: 2.4rem;
+                            height: 3rem;
+                            box-shadow: 0rem 0.12rem 0.24rem -0.12rem #cccccc;
+
+
+                            img {
+                                width: 100%;
+                                // float: left;
+                            }
+
+                            p {
+                                font-size: 0.24rem;
+                                color: #151515;
+                                text-align: center;
+                                line-height: 0.7rem;
+                                // float: left;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
     }
 
     .footer {
@@ -205,6 +537,7 @@
         background-color: #ffffff;
         border: none;
         z-index: 9;
+        box-shadow: 0rem -0.12rem 0.24rem -0.12rem #cccccc;
 
         ul {
             width: 100%;
@@ -229,7 +562,7 @@
                     color: #b1b1b1;
                 }
 
-                
+
 
                 a.home:before {
                     background: url("../img/home/home.png") no-repeat;
